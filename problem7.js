@@ -5,3 +5,7 @@ var unique = givenArray.filter((value, index) => {
 });
 
 console.log(unique.sort());
+// If i use new set, then it will automatically remove my duplicate data
+const givenArray2 = [5, 8, 9, 6, 1, 2, 7, 3, 5, 6, 4];
+var myuniqueArray = [...new Set(givenArray)];
+console.log("Second Array : " + myuniqueArray);
